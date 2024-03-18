@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+/*
+4. Faça um programa que leia 3 valores informados pelo usuário 
+(considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+*/
+
+        // Solicita ao usuário que insira os 3 valores
+        var valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        var valor2 = parseFloat(prompt("Digite o segundo valor:"));
+        var valor3 = parseFloat(prompt("Digite o terceiro valor:"));
+
+        // Verifica qual valor é o maior
+        var maiorValor;
+        var segundoMaiorValor;
+
+        if (valor1 > valor2 && valor1 > valor3) {
+            maiorValor = valor1;
+            // Verifica qual dos valores restantes é o segundo maior
+            if (valor2 > valor3) {
+                segundoMaiorValor = valor2;
+            } else {
+                segundoMaiorValor = valor3;
+            }
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            maiorValor = valor2;
+            // Verifica qual dos valores restantes é o segundo maior
+            if (valor1 > valor3) {
+                segundoMaiorValor = valor1;
+            } else {
+                segundoMaiorValor = valor3;
+            }
+        } else {
+            maiorValor = valor3;
+            // Verifica qual dos valores restantes é o segundo maior
+            if (valor1 > valor2) {
+                segundoMaiorValor = valor1;
+            } else {
+                segundoMaiorValor = valor2;
+            }
+        }
+
+        // Calcula a soma dos dois maiores valores
+        var somaDosMaiores = maiorValor + segundoMaiorValor;
+
+        // Exibe a soma dos dois maiores valores na tela
+        alert("A soma dos dois maiores valores é: " + somaDosMaiores);
+
+    </script>
+
+
+</body>
+</html>
