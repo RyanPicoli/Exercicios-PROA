@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+/*
+3. Faça um programa para ler 3 valores 
+(considere que não serão informados valores iguais) e escrever o maior deles.
+*/
+
+        
+        // Solicita ao usuário que insira os 3 valores
+        var valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        var valor2 = parseFloat(prompt("Digite o segundo valor:"));
+        var valor3 = parseFloat(prompt("Digite o terceiro valor:"));
+
+        // Verifica qual valor é o maior
+        var maiorValor;
+
+        if (valor1 > valor2 && valor1 > valor3) {
+            maiorValor = valor1;
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            maiorValor = valor2;
+        } else {
+            maiorValor = valor3;
+        }
+
+        // Exibe o maior valor na tela
+        alert("O maior valor é: " + maiorValor);
+        document.write("O maior valor é: " + maiorValor);
+        console.log("O maior valor é: " + maiorValor);
+    
+
+    </script>
+
+</body>
+</html>
