@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //_____Calcular área do Retângulo_____
+
+
+        // Declaração da função para calcular a área do retângulo
+        var calculaAreaRetangulo;
+
+        // Captura do valor da base informado pelo usuário e conversão para número decimal
+            var base = parseFloat(prompt("Digite o valor da base do Retângulo"));
+
+        // Captura do valor da altura informado pelo usuário e conversão para número decimal
+            var altura = parseFloat(prompt("Digite o valor da altura do Retângulo"));
+
+        // Cálculo da área multiplicando a base pela altura
+        var area = base * altura;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("Um retângulo de base " + base + " e altura " + altura + " tem  área de: " + area);
+
+
+
+        
+        //_____Calcular área do Quadrado_____
+
+
+        // Declaração da função para calcular a área do quadrado
+        var calculaAreaQuadrado;
+
+        // Captura do valor de um dos lados informado pelo usuário e conversão para número decimal
+            var lado = parseFloat(prompt("Digite o valor de um dos lados do Quadadro"));
+ 
+        // Cálculo da área do quadrado, multiplicando o lado pelo próprio lado (lado * lado)
+        var area = lado * lado;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("Um quadrado de lado "  + lado + " tem a área de: " + area);
+
+
+
+
+
+        //_____Calcular área do Losango_____
+
+
+        // Declaração da função para calcular a área do losango
+        var calcularAreaLosango;
+
+        // Captura do valor da diagonal maior informado pelo usuário e conversão para número decimal
+            var diagonalmaior = parseFloat(prompt("Digite o valor da Diagonal Maior do Losango"));
+
+        // Captura do valor da diagonal menor informado pelo usuário e conversão para número decimal
+            var diagonalmenor = parseFloat(prompt("Digite o valor da Diagonal Menor do Losango"));
+
+        // Cálculo da área do losango usando a fórmula: área = (diagonal maior * diagonal menor) / 2
+        var area = (diagonalmaior * diagonalmenor) / 2;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("O Losango de " + diagonalmaior + " e " + diagonalmenor + " tem a área de: " + area);
+
+
+
+
+
+        //_____Calcula área do Trapézio_____
+
+
+        // Declaração da função para calcular a área do trapézio
+        var calcularAreaTrapezio;
+
+        // Captura do valor da base maior do trapézio informado pelo usuário e conversão para número decimal
+        var basemaior = parseFloat(prompt("Digite o valor da base Maior do Trapézio"));
+
+        // Captura do valor da base menor do trapézio informado pelo usuário e conversão para número decimal
+        var basemenor = parseFloat(prompt("Digite o valor da base Menor do Trapézio"));
+
+        // Captura do valor da altura do trapézio informado pelo usuário e conversão para número decimal
+        var altura = parseFloat(prompt("Digite o valor da altura do Trapézio"));
+
+        // Cálculo da área do trapézio usando a fórmula: área = ((base maior + base menor) * altura) / 2
+        var area = (basemaior + basemenor) * altura / 2;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("O Trapézio de " + basemaior + " , " + basemenor + " e " + altura + " tem a área de: " + area);
+
+
+
+
+
+
+        //_____Calcula área do Paralelogramo_____
+
+        // Declaração da função para calcular a área do paralelogramo
+        var calcularAreaParalelogramo;
+
+        // Captura do valor da base do paralelogramo informado pelo usuário e conversão para número decimal
+        var base = parseFloat(prompt("Digite a base do Paralelogramo"));
+
+        // Captura do valor da altura do paralelogramo informado pelo usuário e conversão para número decimal
+        var altura = parseFloat(prompt("Digite a altura do Paralelogramo"));
+
+        // Cálculo da área do paralelogramo multiplicando a base pela altura
+        var area = base * altura;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("O Paralelogramo de base: " + base + " e altura: " + altura + " tem a área de: " + area);
+
+
+
+
+        //_____Calcula área do Triângulo_____
+
+        var calcularAreaTriangulo;
+
+        // Captura do valor da base do triângulo informado pelo usuário e conversão para número decimal
+        var base = parseFloat(prompt("Digite a base do Triângulo"));
+
+        // Captura do valor da altura do triângulo informado pelo usuário e conversão para número decimal
+        var altura = parseFloat(prompt("Digite a altura do Triângulo"));
+
+        // Cálculo da área do triângulo multiplicando a base pela altura e dividindo por 2
+        var area = base * altura / 2;
+
+        // Exibição da mensagem com a área calculada em um alerta
+        alert("O Triângulo de base: " + base + " e altura: " + altura + " tem a área de: " + area);
+
+
+
+
+
+        // Calcular área do Círculo
+
+        // Solicita ao usuário que insira o raio do círculo
+        var raio = parseFloat(prompt("Digite o raio do Círculo"));
+
+        // Calcula a área do círculo usando a fórmula A = pi * raio^2
+        var area = Math.PI * Math.pow(raio, 2);
+
+        // Exibe a área calculada em um alerta
+        alert("O Círculo com raio " + raio + " tem área de " + area.toFixed(2));
+
+
+
+    
+    </script>
+
+</body>
+</html>
